@@ -1,0 +1,25 @@
+name: stamp_app
+description: "11月 週2チャレンジ スタンプカード"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  confetti: ^0.8.0              # ご褒美の紙吹雪
+  shared_preferences: ^2.5.3    # スタンプの記録を端末に保存
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # カードの画像。ここに書いたファイルだけがアプリに入る。
+  assets:
+    - assets/Nvstamp.jpg
